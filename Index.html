@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallerio Rayford | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#10B981'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-primary">Vallerio<span class="text-secondary">.</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary transition">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50 animate-fade-in">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Vallerio Rayford Phoatmojo</h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Informatics Student at UC Makassar</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Passionate second-year informatics student with expertise in web development and programming.
+                    Dedicated to creating efficient, scalable solutions with clean code.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                        Contact Me
+                    </a>
+                    <a href="#"
+                        class="border border-primary text-primary hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="Assets/Foto Profil AI.png" alt="Profile Photo"
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-xl">
+                    <div class="absolute -bottom-2 -right-2 bg-accent text-white px-4 py-2 rounded-full shadow-md">
+                        <i class="fas fa-code mr-2"></i>Developer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My <span class="text-primary">Skills</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Java -->
+                <div id="observableElement"
+                    class="scroll-animate bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-l-4 border-red-500 opacity-0 translate-y-10 transition-all duration-500 ease-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fab fa-java text-red-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Java</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Experience in object-oriented programming and building Java applications.
+                    </p>
+                </div>
+
+                <!-- Python -->
+                <div id="observableElement"
+                    class="scroll-animate bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-l-4 border-yellow-500 opacity-0 translate-y-10 transition-all duration-500 ease-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fab fa-python text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Python</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Skilled in Python scripting, data analysis, and backend development.
+                    </p>
+                </div>
+
+                <!-- Web Development -->
+                <div id="observableElement"
+                    class="scroll-animate bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-l-4 border-blue-500 opacity-0 translate-y-10 transition-all duration-500 ease-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-code text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Web Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Proficient in HTML, CSS, JavaScript and modern frontend frameworks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Featured <span
+                    class="text-primary">Projects</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Here are some of my recent projects that showcase my skills and capabilities.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition animate-slide-up">
+                    <img src="Assets/FitMe.png" alt="FitMe Application" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">FitMe Application</h3>
+                        <p class="text-gray-600 mb-4">
+                            A fitness tracking application that helps users monitor their workouts and nutrition.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Java</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Android</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition animate-slide-up">
+                    <img src="Assets/FitMe.png" alt="E-Commerce Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Idk... </h3>
+                        <p class="text-gray-600 mb-4">
+                            A full-stack e-commerce website with payment integration and admin dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Get In <span
+                    class="text-primary">Touch</span></h2>
+
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">valleriorayford36@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+62 812 4414 2632</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Location</h4>
+                                <p class="text-gray-600">Makassar, South Sulawesi, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="font-medium text-gray-800 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="bg-gray-100 hover:bg-primary hover:text-white p-3 rounded-full transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-gray-100 hover:bg-primary hover:text-white p-3 rounded-full transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-gray-100 hover:bg-primary hover:text-white p-3 rounded-full transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-medium transition shadow-md w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold mb-4 md:mb-0">Vallerio<span class="text-primary">.</span></div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2025 Vallerio Rayford Phoatmojo. All rights reserved(fake).
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Fade animation (fixed reference)
+            const fadeButton = document.querySelector("#fadeButton");
+            const fadeElement = document.querySelector("#fadeElement");
+
+            if (fadeButton && fadeElement) {
+                fadeButton.addEventListener("click", () => {
+                    fadeElement.classList.toggle("opacity-0");
+                    fadeElement.classList.toggle("opacity-100");
+                });
+            }
+
+            // Improved Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-x-10');
+                        entry.target.classList.add('opacity-100', 'translate-x-0');
+                    }
+                });
+            }, {
+                threshold: 0.15, // Slightly higher threshold for better reliability
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Observe all scroll-animate elements
+            document.querySelectorAll('.scroll-animate').forEach(el => {
+                // Initialize with proper classes
+                el.classList.add('opacity-0', 'translate-x-10', 'transition-all', 'duration-500', 'ease-out');
+                observer.observe(el);
+            });
+
+            // Debugging - log when observer is set up
+            console.log('Observer initialized, watching:', document.querySelectorAll('.scroll-animate').length, 'elements');
+        });
+    </script>
+</body>
+
+</html>
